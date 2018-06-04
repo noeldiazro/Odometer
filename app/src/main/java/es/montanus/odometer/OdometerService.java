@@ -17,7 +17,7 @@ public class OdometerService extends Service {
         this.random = new Random();
     }
 
-    private class OdometerBinder extends Binder {
+    public class OdometerBinder extends Binder {
         OdometerService getOdometer() {
             return OdometerService.this;
         }
